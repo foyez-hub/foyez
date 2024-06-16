@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>Foyez</title>  
+
+<link href="./main.3f6952e4.css" rel="stylesheet">
+<style>
+ 
+ .hero-full-wrapper {
+  position: relative; /* Ensure the hero wrapper is the containing block */
+}
+
+.floating-image {
+  position: absolute;
+  z-index: 1; /* Lower z-index to place it behind the content */
+  width: 470px;
+  height: 470px;
+  margin-top: 6%;
+  margin-left: 25%;
+  background-color: transparent;
+}
+
+.floating-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Ensure #typed-strings is above the image */
+#typed-strings {
+  position: relative;
+  z-index: 1000; /* Higher z-index to ensure it's above other elements */
+}
+
+/* Example positions - adjust as needed */
+.floating-image {
+  top: 10px;
+  left: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .floating-image {
+    width: 400px; /* Adjust width for mobile */
+    height: 400px; /* Maintain aspect ratio */
+    margin-top: 15%;
+    margin-left: 20%;
+    top: 5px;
+    left: 5px;
+  }
+
+  .text-content h1 {
+    font-size: 5.5rem; /* Adjust font size for mobile */
+  }
+
+  #typed-strings {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-image {
+    width: 300px; /* Adjust width for smaller mobile screens */
+    height: 300px; /* Maintain aspect ratio */
+    margin-top: 100%;
+    margin-left: 5%;
+    top: 10px;
+    left: 10px;
+  }
+
+  .text-content h1 {
+    font-size: 1.2rem; /* Further adjust font size for smaller screens */
+  }
+
+  #typed-strings {
+    font-size: 1rem; /* Further adjust font size for smaller screens */
+  }
+}
+
+
+</style>
+
+
+</head>
+
+<body class="minimal">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav ">
+          <li><a href="./index.html" title="">01 : Home</a></li>
+          <li><a href="./works.html" title="">02 : Works</a></li>
+          <li><a href="./about.html" title="">03 : About me</a></li>
+          <li><a href="./contact.html" title="">04 : Contact</a></li>
+          <li><a href="./components.html" title="">05 : Components</a></li>
+        </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+<!-- Add your site or app content here -->
+  <div style="background-color: black;"  class="hero-full-container background-image-container white-text-container">
+    <div class="container">
+     
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="floating-image">
+              <img src="assets/images/foyezimg-removebg-preview.png" alt="Profile Picture">
+            </div>
+            <div class="text-content">
+              <h1>Hello,I'm<br>
+                <span  id="typed-strings">
+                  <span> Emam Hasan</span>
+                  <span> a Software Engineer</span>
+                  <span> a Competitive Programmer</span>
+                  <span> a Student at United International University</span>
+                </span>
+                <span id="typed"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     type();
+     movingBackgroundImage();
+  });
+</script>
+
+
+<script type="text/javascript" src="./main.70a66962.js"></script></body>
+
+</html>
