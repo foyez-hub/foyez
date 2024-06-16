@@ -30,6 +30,22 @@
   height: 100%; /* Adjust the height of the container as needed */
 }
 
+.text-content h1 {
+  font-size: 8rem; /* Default font size for larger screens */
+}
+
+@media (max-width: 768px) {
+  .text-content h1 {
+    font-size: 1.5rem; /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h1 {
+    font-size: 1.2rem; /* Smaller font size for mobile phones */
+  }
+}
+
 </style>
 
 </head>
@@ -72,7 +88,7 @@
         <div class="hero-full-wrapper">
           <div class="text-content">
             <h1>Hello,<br>
-              <span id="typed-strings">
+              <span  id="typed-strings">
                 <span>I'm Emam Hasan</span>
                 <span>Software Engineer</span>
                 <span>Competitive Programmer</span>
