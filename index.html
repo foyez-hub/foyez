@@ -19,85 +19,18 @@
 
 <link href="./main.3f6952e4.css" rel="stylesheet">
 <style>
- 
- .hero-full-wrapper {
-  position: relative; /* Ensure the hero wrapper is the containing block */
+
+  .hero-full-container {
+  background-image: url('assets/images/foyezimg-removebg-previewBW.png');
+  background-size: 450px 450px; /* Adjust the width and height as needed */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  width: 100%; /* Adjust the width of the container as needed */
+  height: 100%; /* Adjust the height of the container as needed */
 }
-
-.floating-image {
-  position: absolute;
-  z-index: 1; /* Lower z-index to place it behind the content */
-  width: 470px;
-  height: 470px;
-  margin-top: 6%;
-  margin-left: 25%;
-  background-color: transparent;
-}
-
-.floating-image img {
-  width: 100%;
-  height: 100%;
-}
-
-.text-content {
-  position: relative;
-  z-index: 10;
-}
-
-/* Ensure #typed-strings is above the image */
-#typed-strings {
-  position: relative;
-  z-index: 1000; /* Higher z-index to ensure it's above other elements */
-}
-
-/* Example positions - adjust as needed */
-.floating-image {
-  top: 10px;
-  left: 10px;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .floating-image {
-    width: 400px; /* Adjust width for mobile */
-    height: 400px; /* Maintain aspect ratio */
-    margin-top: 20%;
-    margin-left: 20%;
-    top: 5px;
-    left: 5px;
-  }
-
-  .text-content h1 {
-    font-size: 5.5rem; /* Adjust font size for mobile */
-  }
-
-  #typed-strings {
-    font-size: 1.2rem; /* Adjust font size for mobile */
-  }
-}
-
-@media (max-width: 480px) {
-  .floating-image {
-    width: 250px; /* Adjust width for smaller mobile screens */
-    height: 250px; /* Maintain aspect ratio */
-    margin-top: 100%;
-    margin-left: 5%;
-    top: 10px;
-    left: 10px;
-  }
-
-  .text-content h1 {
-    font-size: 1.2rem; /* Further adjust font size for smaller screens */
-  }
-
-  #typed-strings {
-    font-size: 8rem; /* Further adjust font size for smaller screens */
-  }
-}
-
 
 </style>
-
 
 </head>
 
@@ -132,31 +65,27 @@
   </nav>
 </header>
 <!-- Add your site or app content here -->
-  <div style="background-color: black;"  class="hero-full-container background-image-container white-text-container">
-    <div class="container">
-     
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="floating-image">
-              <img src="assets/images/foyezimg-removebg-preview.png" alt="Profile Picture">
-            </div>
-            <div class="text-content">
-              <h1>Hello,I'm<br>
-                <span  id="typed-strings">
-                  <span> Emam Hasan</span>
-                  <span> a Software Engineer</span>
-                  <span> a Competitive Programmer</span>
-                  <span> a Student at United International University</span>
-                </span>
-                <span id="typed"></span>
-              </h1>
-            </div>
+<div  class="hero-full-container background-image-container white-text-container"  background-image: url('foyezimg-removebg-preview.png');">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="hero-full-wrapper">
+          <div class="text-content">
+            <h1>Hello,<br>
+              <span id="typed-strings">
+                <span>I'm Emam Hasan</span>
+                <span>Software Engineer</span>
+                <span>Competitive Programmer</span>
+                <span>Student at United International University</span>
+              </span>
+              <span id="typed"></span>
+            </h1>
           </div>
         </div>
       </div>
-      
-      
+    </div>
+  </div>
+</div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
